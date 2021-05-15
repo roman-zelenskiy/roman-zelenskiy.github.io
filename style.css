@@ -1,50 +1,127 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
-
-
 
 .wrapper {
   display: flex;
@@ -58,82 +135,90 @@ table {
 .wrapper > div {
   padding: 0px 15px 0 15px;
 }
-.name span{
+.name span {
   font-size: 50px;
   color: white;
 }
-.name p{
+.name p {
   font-size: 20px;
   color: white;
 }
-.box_left div, .box_right div{
+.box_left div,
+.box_right div {
   font-size: 24;
   margin-top: 25px;
 }
-.box_left div:first-child, .box_right div:first-child{
+.box_left div:first-child,
+.box_right div:first-child {
   margin-top: 0;
 }
-p{
+p {
   margin-top: 10px;
   color: rgb(209, 209, 209);
 }
-.projects a{
+.projects a {
   margin-top: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   color: rgb(209, 209, 209);
-} 
-h3{
+}
+h3 {
   text-transform: uppercase;
   color: white;
 }
+.education::before,.projects::before, .slills::before,.trainings::before,.languages::before,.contact_information::before{
+  content: "";
+  background: white;
+  width: 30px;
+  height: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
 
-
-
-@media screen and (max-width:1200px){
-  .wrapper{
+@media screen and (max-width: 1200px) {
+  .wrapper {
     width: 960px;
   }
   .wrapper > div {
     padding: 0 10px 0 10px;
   }
 }
-@media screen and (max-width:992px){
-  .wrapper{
+@media screen and (max-width: 992px) {
+  .wrapper {
     width: 720px;
   }
   .wrapper > div {
     padding: 0 10px 0 10px;
   }
 }
-@media screen and (max-width:768px){
-  .wrapper{
+@media screen and (max-width: 768px) {
+  .wrapper {
     width: 540px;
   }
   .wrapper > div {
     padding: 0 10px 0 10px;
   }
 }
-@media screen and (max-width:576px){
-  .wrapper{
+@media screen and (max-width: 576px) {
+  .wrapper {
     width: 100%;
   }
   .wrapper > div {
     padding: 0 3px 0 3px;
   }
-  .name span{
+  .name span {
     font-size: 30px;
     color: white;
   }
-  .name p{
+  .name p {
     font-size: 17px;
     color: white;
   }
-  .wrapper{
+  .wrapper {
     padding-left: 0;
     padding-right: 0;
   }
-  .contact_information p+p+p{
+  .contact_information p + p + p {
     font-size: 13px;
   }
 }
