@@ -110,7 +110,7 @@ h3{
     width: 100%;
   }
   .wrapper > div {
-    padding: 0px;
+    padding: 0 3px 0 3px;
   }
   .name span{
     font-size: 30px;
