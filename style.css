@@ -94,15 +94,24 @@ h3{
   .wrapper{
     width: 960px;
   }
+  .wrapper > div {
+    padding: 0 10px 0 10px;
+  }
 }
 @media screen and (max-width:992px){
   .wrapper{
     width: 720px;
   }
+  .wrapper > div {
+    padding: 0 10px 0 10px;
+  }
 }
 @media screen and (max-width:768px){
   .wrapper{
     width: 540px;
+  }
+  .wrapper > div {
+    padding: 0 10px 0 10px;
   }
 }
 @media screen and (max-width:576px){
