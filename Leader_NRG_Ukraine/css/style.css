@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0;
+}
+.search,.basket,.our_advantages div div div::before,.our_advantages div div div+div::before,.our_advantages div div div+div+div::before,.our_advantages div div div+div+div+div::before,.our_advantages div div div+div+div+div+div::before,.our_advantages div div div+div+div+div+div+div::before, .greenline_top , .greenline_bottom{
+    background: url(../picture/css_sprites.png);
+}
+.wrapper{
+    background: rgb(53, 208, 110);
+}
+
+.search{
+    display: block;
+    width: 14px; 
+    height: 17px;
+    background-position: -47px -230px;
+}
+.basket{
+    display: block;
+    width: 17px; 
+    height: 17px;
+    background-position:  -10px -230px;
+}
+
+.currency{
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    max-width: 100%;
+}
+.currency::after{
+    display: inline-block;
+    margin-left: .655em;
+    vertical-align: .255em;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: rotate(315deg);
+    border-top: none;
+    border-right: none;
+}
+.currency:hover{
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        max-width: 100%;
+}
+.currency_wrap{
+    margin: 0;
+}
+.currency_wrap .bi{
+    color: white;
+}
+.additional_panels{
+    margin-right: 0px;
+    padding: 10px 0 10px 0;
+}
+.additional_panels>div{
+
+    padding: 0;
+}
+.my_navbar{
+    background: rgb(53, 208, 110);
+    padding: 0;
+}
+.main_menu{
+    background: white;
+    padding: 5px 0 5px 0px;
+    font-size: 14px;
+}
+header{
+    position: relative;
+    z-index: 10;
+}
+.button{
+    position: relative;
+    padding: 5px 0 5px 0px;
+}
+.button .buttonmenu_navbartoggler{
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: skewX(155deg);
+}
+.button .buttonmenu_navbartoggler{
+    border: none;
+}
+.button button:focus{
+    outline: none;
+}
+.main_menu ul li .active{
+    color:  rgb(53, 208, 110)!important;
+}
+.dropdown-item.active{
+    color:  rgb(53, 208, 110);
+    background: none;
+}
+.main_menu ul li a{
+    color:  rgb(54, 68, 77)
+}
+.dropdowntoggle_yet::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid rgb(53, 208, 110);
+    border-bottom: 1px solid rgb(53, 208, 110);
+    transform: rotate(315deg);
+    border-top: none;
+    border-right: none;
+}
+.main_menu ul li .dropdownmenu_yet{
+    border: none;
+    margin: .30rem 0 0;
+    box-shadow: 0 0px 20px 1px gray;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 5;
+    border-radius:0;
+}
+.main_menu ul li .dropdownmenu_yet::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-right:20px solid transparent;
+    border-bottom:20px solid white;
+    box-shadow: 0 -6px 20px -9px gray;
+    transform: rotate(135deg);
+    top: -8%;
+    left: 16%;
+    z-index: 10;
+}
+.main_menu ul li .dropdownmenu_yet::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(to right , rgb(53, 207,111) 25%, rgb(42, 183, 165) 95% );
+}
+.slider>div{
+    position: relative;
+}
+.slider div .owl-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -35px;
+}
+.slider div .owl-dots button{
+    width: 10px;
+    height: 2px;
+    background: white;
+}
+.slider div .owl-dots button+button{
+    margin-left: 10px;
+}
+.slider div .owl-dots .active{
+    width: 30px;
+    height: 2px;
+    background: rgb(53, 208, 110);
+}
+.slider{
+    display: none;
+}  
+.slider div .item{
+    max-height: 599px;
+}
+.content_slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.content_slider .white_line{
+    color: rgb(53, 208, 110);
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.white_line::after{
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2px;
+    background:white;
+    margin-top: 20px;
+}
+.content_slider h2+h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 21px;
+    font-size: 48px;
+}
+.content_slider p{
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+.content_slider a{
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    background: rgb(53, 208, 110);
+    padding: 13px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+section{
+    padding-top: 30px;
+}
+.wrap_calculator{
+    background: rgb(242, 247, 248);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.wrap_calculator{
+    padding-left: 0;
+    padding-right: 0;
+}
+.wrap_calculator>div{
+    text-align: center;
+}
+.wrap_calculator h2{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+.wrap_calculator h2::before, .provide_energy h2::before, .provideenergy_carousel div h3::after, .save_planet div h2:before, .our_advantages div h2::before, .our_advantages div div h4::after , .recent_projects div h2::before,.last_news div div div div h4::after,.last_news div h2::before, .join div div div>h2::before ,.leader_nrg h4::after,.contacts h4::after,.sign_footer h4::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background:rgb(53, 208, 110);
+    margin: 0px auto 15px auto;
+}
+.wrap_calculator h3{
+    color: rgb(53, 208, 110);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.calculator {
+    margin: 21px 0 0px 0;
+    padding: 0;
+}
+.calculator button{
+    width: 69px;
+    height: 69px;
+    border: 5px solid white;
+    background: linear-gradient(to bottom ,rgb(42 ,183, 165) 30%, rgb(53, 207, 111));
+    box-shadow: 0 0px 8px 0px gray;
+    margin-top: -20px;
+    position: relative;
+    z-index: 10;
+} 
+.calculator button:focus{
+    outline: none;
+}
+.calculator button::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -12px;
+}
+.initial_data{
+    background: white;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+.calculator h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+.calculator .initial_data>p{
+    font-size: 13px;
+    color: rgb(166, 174, 183);
+}
+.calculator .initial_data div>h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+.calculator .initial_data div>p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: black;
+    padding:0;
+    margin:0;
+}
+.calculator .initial_data form input{
+    max-width: 109px;
+    border-radius:0;
+    border:1px solid rgb(53, 208, 110); 
+}
+.calculator .initial_data form  input::-webkit-outer-spin-button,
+.calculator .initial_data form  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calculator .initial_data form input[type=number]{
+    -moz-appearance: textfield;
+}
+.calculator .initial_data>div{
+    margin-top:10px;
+}
+.calculated_data{
+    margin-top: -20px;
+    border: 3px solid rgb(53, 208, 110);
+    background: white;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.calculated_data div div{
+    padding-left: 0;
+    padding-right: 0;
+}
+.calculated_data div div>p{
+    color: rgb(53, 208, 110); 
+    font-size: 30px;
+    margin: 0;
+}
+.calculated_data div div>p+p{
+    color: rgb(166, 174, 183);
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.calculated_data div div>p+p span{
+    color: rgb(53, 208, 110);
+}
+.calculated_data>p{
+    font-size: 15px;
+    color: rgb(166, 174, 183);
+    text-align: center;
+}
+.calculated_data h4{
+    margin: 0;
+}
+.green_color{
+   color:rgb(53, 208, 110); 
+}
+.wrap_calculator div>p{
+    font-size: 15px;
+    color: rgb(166, 174, 183);
+    margin: 25px auto 0px auto;
+}
+.get_consultation,.more_projects,.sign{
+    display: inline-block;
+    background:rgb(53, 208, 110);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 21px 15px 19px 15px;
+    margin-top: 15px;
+}
+.get_consultation:hover,.more_projects:hover,.sign:hover {
+    text-decoration: none;
+    color: white;
+}
+.get_consultation{
+    box-shadow: 0 0px 12px 1px rgb(172, 172, 172);
+}
+.provideenergy_carousel{
+    position: relative;
+}
+.provideenergy_carousel .owl-dots{
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+}
+.provideenergy_carousel .owl-dots button{
+    width: 10px;
+    height: 2px;
+    background: white;
+    box-shadow: 0 0px 5px 1px rgb(53, 208, 110);
+}
+.provideenergy_carousel .owl-dots button+button{
+    margin-left: 10px;
+}
+.provideenergy_carousel .owl-dots .active{
+    width: 30px;
+    height: 2px;
+    background: rgb(53, 208, 110);
+}
+.state_projectsv p, .office p, .private_houses p{
+    margin: 0 auto;
+}
+.state_projectsv{
+    box-shadow: 0 0px 5px 1px grey;
+    margin: 60px 5px 5px 5px;
+    padding-bottom: 26px;
+}
+.office{
+    text-align: center;
+    box-shadow: 0 0px 5px 1px gray;
+    margin: 60px 5px 5px 5px;
+    padding-bottom: 26px;
+}
+.private_houses{
+    text-align: center;
+    box-shadow: 0 0px 5px 1px gray;
+    margin: 60px 5px 5px 5px;
+    padding-bottom: 26px;
+}
+.provide_energy{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.provide_energy>h2{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.provide_energy>h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:rgb(53, 208, 110); 
+}
+.provideenergy_carousel .item img{
+    display: inline-block;
+    margin-top: -50px;
+    width: 72%;
+    border: 5px solid transparent;
+    border-image:linear-gradient(to bottom ,transparent 50px, rgb(45,190,150) 50px, rgb(53,207,111)100%)6;
+}
+.provideenergy_carousel .item h3{
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600 ;
+    color: black;
+}
+.provideenergy_carousel .item h3::after{
+    margin-top: 10px;
+}
+.provideenergy_carousel .item p{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgb(145, 150, 156);
+    
+}
+.save_planet{
+    text-align: center;
+    background: url("../picture/Group.png") no-repeat;
+    background-size: cover;
+    min-height: 519px;
+}
+.save_planet h2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.save_planet p{
+    font-style: italic;
+    margin: 0 auto;
+    color: white;
+    margin-top: 28px;
+    font-size: 15px;
+}
+.our_advantages{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.our_advantages div h2{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.our_advantages div h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color:rgb(53, 208, 110); 
+}
+.our_advantages div div div h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+.our_advantages div div div p{
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(145, 150, 156);
+    margin: 10px auto 0 auto;
+}
+.our_advantages div div h4::after{
+    margin-top: 10px;
+}
+.our_advantages div div div{
+    margin-top: 25px;
+}
+.our_advantages div div div::before{
+    content: "";
+    width: 90px; 
+    height: 90px;
+    background-position:  -10px -120px;
+    display: block;
+    margin: 0 auto;
+}
+.our_advantages div div div+div::before{
+    content: "";
+    width: 55px; 
+    height: 90px;
+    background-position: -237px -120px;
+}
+.our_advantages div div div+div+div::before{
+    content: "";
+    width: 90px;
+    height: 88px;
+    background-position: -120px -120px;
+}
+.our_advantages div div div+div+div+div::before{
+    content: "";
+    width: 95px; 
+    height: 90px;
+    background-position:  -10px -10px;
+}
+.our_advantages div div div+div+div+div+div::before{
+    content: "";
+    width: 92px; 
+    height: 89px;
+    background-position:  -125px -10px;
+}
+.our_advantages div div div+div+div+div+div+div::before{
+    content: "";
+    width: 66px;
+    height: 90px;
+    background-position:  -237px -10px;
+}
+.recent_projects{
+    background: url(../picture/solar-and-wind-energy-2.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.recent_projects div h2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.recent_projects div h3{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0 auto; 
+}
+.recent_projects div div div div{
+    background: white;
+    min-height: 100%;
+}
+.recent_projects div div div div h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(35, 35, 35);
+    margin-top: 18px;
+}
+.recent_projects div div div div p{
+    font-size: 15px;
+    color: rgb(35, 35, 35);
+    font-weight: lighter;
+    color: rgb(145, 150, 156);
+    margin-top: 10px;
+    padding-bottom: 25px;
+}
+.recent_projects .container>div{
+    margin: 0 auto;
+    margin-top: 23px;
+}
+.recent_projects div div div img{
+    width: 100%;
+}
+.last_news{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.last_news div h2{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.last_news>div>h3{
+    color:rgb(53, 208, 110); 
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0 auto; 
+}
+.last_news>div>div>div>div{
+    background: white;
+    min-height: 100%;
+    box-shadow: 0 0px 12px 1px rgb(192, 192, 192);
+    text-align: left;
+    padding-bottom: 25px;
+}
+.last_news>div>div>div>div>h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(35, 35, 35);
+    margin-top: 12px;
+}
+.last_news>div>div>div>div>h4::after{
+    margin: 8px 0 0 0;
+}
+.last_news>div>div>div>div>p{
+    font-size: 15px;
+    color: rgb(35, 35, 35);
+    font-weight: lighter;
+    color: rgb(145, 150, 156);
+    margin-top: 10px;
+    text-align: justify;
+}
+.last_news .container>div{
+    margin: 0 auto;
+    margin-top: 23px;
+}
+.last_news div div div img{
+    width: 100%;
+}
+.last_news div div div div div>p{
+    margin: 0;
+    color: rgb(145, 150, 156);
+    font-size: 12px;
+    padding: 0;
+}
+.last_news div div div div div>a{
+    text-align: right;
+    text-decoration: none;
+    color:rgb(53, 208, 110); 
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+}
+.last_news div div div div div{
+    margin: 0 auto;
+}
+.recent_projects div div>div img,.last_news div div>div  img{
+    border-bottom: 4px solid transparent;
+}
+.sign{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    box-shadow: 0 0px 12px 1px rgb(172, 172, 172);
+}
+.join div div div>h2::before{
+    margin: 0 0 8px 0;
+}
+.join div div div>h2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+.join div div div>p{
+    font-size: 15px;
+    color: white;
+    font-weight: lighter;
+}
+.join div div div+div img{
+   width: 100%;
+}
+.form_subscription div form input{
+    border-radius: 0;
+    box-shadow: 0 0px 12px 1px rgb(172, 172, 172);
+}
+.form_subscription div form input::placeholder{
+   font-size: 14px;
+   color: rgb(145, 150, 156);
+   font-style: italic;
+}
+.join{
+    background: url(../picture/Group\ 11.png);
+    background-size: contain;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+footer{
+    background: url(../picture/RevoluSunSP-XSeriesShot.png) no-repeat;
+    background-size: cover;
+    padding-top: 28px;
+    padding-bottom: 23px;
+}
+footer .container>p{
+    text-align: center; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(166, 174, 183);
+}
+.leader_nrg h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.leader_nrg p{
+    font-size: 15px;
+    color: rgb(145, 150, 156);
+    font-weight: lighter;
+    text-align: justify;
+    padding: 0;
+    margin-bottom: 0;
+}
+.contacts h4,.sign_footer h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.contacts p{
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 15px;
+    line-height: 19px;
+}
+.sign_footer h5{
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.sign_footer div div form input{
+    border-radius: 0;
+    background: transparent;
+    padding: 20px 0px 20px 19px;
+    width: 100%;
+} 
+.sign_footer div div form input::placeholder{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: lighter;
+} 
+.sign_footer div button{
+    background: rgb(53, 208, 110);
+    border: none;
+    padding: 0px 23px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+} 
+.sign_footer div button:focus{
+    outline: none;
+} 
+.sign_footer div div {
+    padding-right: 0;
+}
+.contacts p a{
+    color: white;
+}
+.leader_nrg h4::after,.contacts h4::after,.sign_footer h4::after{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+}
+.menu_footer{
+    list-style-type: none;
+    margin: 0 auto;
+    padding:20px 0;
+}
+footer div ul li{
+    text-align: center;
+}
+footer div ul li a{
+    color: rgb(166, 174, 183);
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+}
+footer div ul li a:hover{
+    color: rgb(166, 174, 183);
+    text-decoration: none;
+}
+.greenline_top{
+    width: 30px; 
+    height: 2px;
+    background-position: -81px -230px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.greenline_bottom{
+    width: 30px; 
+    height: 2px;
+    background-position: -81px -230px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+@media screen and (max-width:992px){
+    .wrapper header{
+        min-width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+    .main_menu ul{
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width:768px){
+    .section{
+        padding-top: 30px;
+    }
+    .content_slider .white_line{
+        margin-top: 50px;
+    }
+    .white_line::after {
+        margin-top: 20px;
+    }
+    .content_slider h2+h2 {
+        margin-top: 21px;
+    }
+    .calculator {
+        margin-top: 31px;
+    }
+    .slider{
+        display: block;
+    }  
+    .initial_data{
+        margin-right: -23px;
+    }
+    .initial_data>p{
+        margin-top: 15px;
+    }
+    .calculator .initial_data div{
+        margin-top: 15px;
+    }
+    .calculated_data{
+        margin-top: 0;
+        margin-left: -23px;
+    }
+    .calculated_data>p{
+        margin-top: 10px;
+        margin-bottom: 11px;
+    }
+    .calculator button{
+        margin: auto 0 auto 0;
+        transform: rotate(270deg);
+    }
+    .wrap_calculator, .our_advantages{
+        padding-bottom: 30px;
+    }
+    .provideenergy_carousel .item h3{
+        margin-top: 20px;
+    }
+    .provideenergy_carousel .item h3::after{
+        margin-top: 15px;
+    }
+    .provideenergy_carousel .item p{
+        margin-top: 15px;
+    }
+    .state_projectsv{
+        padding-bottom: 31px;
+    }
+    .office{
+        padding-bottom: 31px;
+    }
+    .private_houses{
+        padding-bottom: 31px;
+    }
+    .provide_energy{
+        padding-bottom:50px ;
+    }
+    .save_planet p{
+        margin-top: 35px;
+    }
+    .our_advantages div div div p{
+        margin-top: 14px;
+    }
+    .our_advantages div div h4::after{
+        margin-top: 14px;
+    }
+    .our_advantages div div div{
+        margin-top: 33px;
+    }
+    .recent_projects .container>div, .last_news .container>div{
+        margin-top: 33px;
+    }
+    .recent_projects div div div div h4{
+        margin-top: 23px;
+    }
+    .recent_projects>div>div>div>div>p,.last_news div>div>div>div>p{
+        margin-top: 13px;
+    }
+    .recent_projects ,.last_news{
+        padding-bottom: 30px;
+    }
+    .last_news>div>div>div>div>h4{
+        margin-top: 15px;
+    }
+    .last_news div div div div h4::after{
+        margin-top: 10px;
+    }
+    .last_news>div>div>div>div{
+        padding-bottom: 30px;
+    }
+    .join div div div+div{
+        margin: auto;
+    }
+    footer{
+        padding-top: 38px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width:992px){
+    .button{
+        display: none;
+    }
+    .main_menu{
+        transform: skewX(155deg);
+    }
+    .main_menu ul{
+        transform: skewX(25deg);
+    }
+    .content_slider .white_line{
+        margin-top: 100px;
+    }
+    .white_line::after {
+        margin-top: 30px;
+    }
+    .content_slider h2+h2 {
+        margin-top: 31px;
+    }
+    .calculator {
+        margin-top: 41px;
+    }
+    .initial_data{
+        padding-top: 51px;
+    }
+    .calculated_data{
+        padding-top: 51px;
+        padding-bottom: 11px;
+    }
+    .calculated_data div div{
+        margin-top: 20px;
+    }
+    .calculated_data div>p{
+        margin-top: 25px;
+    }
+    .wrap_calculator div>p{
+        margin: 50px auto 0px auto;
+    }
+    .get_consultation,.more_projects{
+        margin-top: 31px;
+    }
+    .wrap_calculator, .our_advantages,.provide_energy{
+        padding-bottom: 40px;
+    }
+    .provideenergy_carousel .item:hover{
+        box-shadow: 0 0px 5px 1px gray ,0 0px 0px 24px white inset, 0 0px 0px 25px rgb(218, 218, 218) inset;
+    }
+    .provideenergy_carousel .item:hover img{
+        border-image:linear-gradient(to bottom ,rgb(42,183,165) 80%, rgb(53,207,111)100%)4;
+    }
+    section{
+        padding-top: 30px;
+    }
+    .save_planet p{
+        margin-top: 45px;
+    }
+    .our_advantages div div div p{
+        margin-top: 17px;
+    }
+    .our_advantages div div h4::after{
+        margin-top: 17px;
+    }
+    .our_advantages div div div{
+        margin-top: 40px;
+    }
+    .recent_projects .container>div, .last_news .container>div{
+        margin-top: 37px;
+    }
+    .recent_projects div div div div h4{
+        margin-top: 28px;
+    }
+    .recent_projects>div>div>div>div>p,.last_news div>div>div>div>p{
+        margin-top: 16px;
+    }
+    .recent_projects ,.last_news{
+        padding-bottom: 40px;
+    }
+    .last_news>div>div>div>div>h4{
+        margin-top: 20px;
+    }
+    .last_news div div div div h4::after{
+        margin-top: 12px;
+    }
+    .last_news>div>div>div>div{
+        padding-bottom: 40px;
+    }
+    .recent_projects div div>div:hover img,.last_news div div>div:hover img{
+        border-bottom: 4px solid transparent;
+        border-image: linear-gradient(to right ,rgb(53,207,111)30%,rgb(42,183,165)80%, white 80% )1;
+    }
+    .sign{
+        padding-top: 15px;
+    }
+    .join div div div>h2::before{
+        margin: 0 0 12px 0;
+    }
+    .join{
+        padding-bottom: 40px;
+    }
+    footer{
+        padding-top: 46px;
+        padding-bottom: 35px;
+    }
+    .leader_nrg h4::after,.contacts h4::after,.sign_footer h4::after{
+        margin-top: 15px;
+    }
+    footer div div .sign_footer h5{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (min-width:1200px){
+    .wrap_calculator{
+        padding-bottom: 50px;
+    }
+    .wrap_calculator h2::before, .provide_energy h2::before, .save_planet div h2::before,.our_advantages div h2::before,.recent_projects div h2::before,.last_news div h2::before{
+        margin-bottom: 30px;
+    }
+    .content_slider .white_line{
+        margin-top: 175px;
+    }
+    .provideenergy_carousel .item h3{
+        margin-top: 25px;
+    }
+    .provideenergy_carousel .item h3::after{
+        margin-top: 20px;
+    }
+    .provideenergy_carousel .item p{
+        margin-top: 20px;
+    }
+    .provide_energy h2::before .save_planetc h2::before{
+        margin-bottom: 30px;
+    }
+    section{
+        padding-top: 60px;
+    }
+    .state_projectsv{
+        padding-bottom: 36px;
+    }
+    .office{
+        padding-bottom: 36px;
+    }
+    .private_houses{
+        padding-bottom: 36px;
+    }
+    .save_planet p{
+        margin-top: 56px;
+    }
+    .our_advantages div div div p{
+       
+        margin-top: 20px;
+    }
+    .our_advantages div div h4::after{
+        margin-top: 20px;
+    }
+    .our_advantages div div div{
+        margin-top: 50px;
+    }
+    .wrap_calculator, .our_advantages,.provide_energy{
+        padding-bottom: 60px;
+    }
+    .recent_projects .container>div, .last_news .container>div{
+        margin-top: 46px;
+    }
+    .recent_projects div div div div h4{
+        margin-top: 36px;
+    }
+    .recent_projects>div>div>div>div>p,.last_news div>div>div>div>p{
+        margin-top: 20px;
+    }
+    .recent_projects ,.last_news{
+        padding-bottom: 50px;
+    }
+    .last_news>div>div>div>div>h4{
+        margin-top: 25px;
+    }
+    .last_news div div div div h4::after{
+        margin-top: 16px;
+    }
+    .last_news>div>div>div>div{
+        padding-bottom: 50px;
+    }
+    .join div div div>h2::before{
+        margin: 0 0 17px 0;
+    }
+    .join{
+        padding-bottom: 60px;
+    }
+    footer{
+        padding-top: 56px;
+        padding-bottom: 46px;
+    }
+    .leader_nrg h4::after,.contacts h4::after,.sign_footer h4::after{
+        margin-top: 20px;
+    }
+    .greenline_top{
+        margin-top: 30px;
+    }
+    .greenline_bottom{
+        margin-bottom: 30px;
+    }
+    footer div div .sign_footer h5{
+        margin-bottom: 25px;
+    }
+}
