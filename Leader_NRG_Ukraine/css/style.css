@@ -296,7 +296,7 @@ section{
     transform: rotate(45deg);
     margin: 0 auto;
     position: relative;
-    top: 50%;
+    top: 0%;
     margin-top: -12px;
 }
 .initial_data{
